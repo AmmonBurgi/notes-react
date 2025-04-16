@@ -48,3 +48,12 @@ To skip calculations and unnecessary re-rendering, use one of these Hooks:
 
 - useCallback - lets you cache a function definition before passing it down to an optimized component
 
+## Creating Custom Hooks
+Building your own Hooks lets you extract component logic into reusable functions. Capable of calling other React hooks and follows the "use" naming convention. 
+
+## Rules of Hooks
+Only call Hooks at the top level
+- Don't call hooks inside loops, conditions, nested functions, or try/catch blocks. Instead, always use Hooks at the top level of your React function, before any early returns. You can only call Hooks while React is rendering a function component.
+
+Only call Hooks from React functions
+- Don't call Hooks from regular JavaScript functions. Instead, you can call Hooks inside React functions components or custom Hooks. 
